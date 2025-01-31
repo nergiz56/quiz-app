@@ -85,11 +85,14 @@
     align-items: center;
     justify-content: space-between;
 }
-/* timer */
+/* timer
+    position: absolute;-> normal akışın dışına çıkartırız
+ */
 .quiz_box header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
 }
 .quiz_box header .timer{
     display: flex;
@@ -110,6 +113,15 @@
     margin-left: 3px;
     width: 25px;
     text-align: center;
+}
+.quiz_box header .time_line{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+   /* width: 550px;  */
+    background: #f0A500;
+
 }
 
 /* score box */
